@@ -121,14 +121,14 @@ public class Person {
     //M
     public void generate(){
         //nombre
-        auxSex = new Random().nextInt(99);
+        auxSex = new Random().nextInt(100);
         if (auxSex < 57){
-            auxNombre = new Random().nextInt(99);
+            auxNombre = new Random().nextInt(100);
             if (auxNombre >= 42){
-                auxn1 = new Random().nextInt(49);
-                auxn2 = new Random().nextInt(49);
-                auxl1 = new Random().nextInt(149);
-                auxl2 = new Random().nextInt(149);
+                auxn1 = new Random().nextInt(50);
+                auxn2 = new Random().nextInt(50);
+                auxl1 = new Random().nextInt(150);
+                auxl2 = new Random().nextInt(150);
 
                 while (auxn1 == auxn2){
                     auxn2 = new Random().nextInt(49);
@@ -140,9 +140,9 @@ public class Person {
                 this.lname2 = apellidos[auxl2];
                 this.sex = 'H';
             } else {
-                auxn1 = new Random().nextInt(49);
-                auxl1 = new Random().nextInt(149);
-                auxl2 = new Random().nextInt(149);
+                auxn1 = new Random().nextInt(50);
+                auxl1 = new Random().nextInt(150);
+                auxl2 = new Random().nextInt(150);
 
                 this.fname1 = hombres[auxn1];
                 this.lname1 = apellidos[auxl1];
@@ -150,15 +150,15 @@ public class Person {
                 this.sex = 'H';
             }
         } else {
-            auxNombre = new Random().nextInt(99);
+            auxNombre = new Random().nextInt(100);
             if (auxNombre >= 42){
-                auxn1 = new Random().nextInt(49);
-                auxn2 = new Random().nextInt(49);
-                auxl1 = new Random().nextInt(149);
-                auxl2 = new Random().nextInt(149);
+                auxn1 = new Random().nextInt(50);
+                auxn2 = new Random().nextInt(50);
+                auxl1 = new Random().nextInt(150);
+                auxl2 = new Random().nextInt(150);
 
                 while (auxn1 == auxn2){
-                    auxn2 = new Random().nextInt(49);
+                    auxn2 = new Random().nextInt(50);
                 }
 
                 this.fname1 = mujeres[auxn1];
@@ -167,9 +167,9 @@ public class Person {
                 this.lname2 = apellidos[auxl2];
                 this.sex = 'M';
             } else {
-                auxn1 = new Random().nextInt(49);
-                auxl1 = new Random().nextInt(149);
-                auxl2 = new Random().nextInt(149);
+                auxn1 = new Random().nextInt(50);
+                auxl1 = new Random().nextInt(150);
+                auxl2 = new Random().nextInt(150);
 
                 this.fname1 = mujeres[auxn1];
                 this.lname1 = apellidos[auxl1];
@@ -200,7 +200,7 @@ public class Person {
         this.dbirth = String.valueOf(auxYear) + "-" + String.valueOf(auxMes) + "-" + String.valueOf(auxDia);
 
         //fallecido
-        auxMrt = new Random().nextInt(99);
+        auxMrt = new Random().nextInt(100);
         if (auxMrt < 12){
             this.deceased = true;
         } else {
@@ -208,9 +208,8 @@ public class Person {
         }
 
         //Estado
-        auxEstado = new Random().nextInt(32 - 1) + 1;
+        auxEstado = new Random().nextInt(33);
         this.state = estado[auxEstado];
-
         //Altura
         auxH =  new Random().nextInt(213 - 150) + 150;
         this.height = auxH / 100;
