@@ -14,7 +14,7 @@ public class main {
 
 
     public static void main(String[] args) {
-        for (int i = 0; i < 10; i++){
+        for (int i = 0; i < 1000; i++){
             Person Datos = new Person();
             Datos.generate();
             Datos.sql();
@@ -29,8 +29,7 @@ public class main {
 
             } catch (SQLException ex) {
                 System.out.println("SQL Exception: " + ex.getMessage());
-                System.out.println("SQL Exception: " + ex.getMessage());
-                System.out.println("SQL Exception: " + ex.getMessage());
+                System.out.println();
             }
             finally {
                 if (result != null) {

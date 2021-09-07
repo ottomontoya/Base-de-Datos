@@ -208,7 +208,7 @@ public class Person {
         }
 
         //Estado
-        auxEstado = new Random().nextInt(33);
+        auxEstado = new Random().nextInt(32);
         this.state = estado[auxEstado];
         //Altura
         auxH =  new Random().nextInt(213 - 150) + 150;
